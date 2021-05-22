@@ -1,0 +1,34 @@
+<template>
+	<div class="logo">
+		<svg
+			width="25"
+			height="25"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				fill-rule="evenodd"
+				clip-rule="evenodd"
+				d="M5.072 5.079A10.467 10.467 0 0 0 2 12.5c0 2.898 1.174 5.522 3.072 7.422l.003.003C6.975 21.825 9.601 23 12.5 23c2.898 0 5.522-1.174 7.422-3.072l.006-.006A10.467 10.467 0 0 0 23 12.5c0-2.9-1.175-5.524-3.075-7.425A10.467 10.467 0 0 0 12.5 2a10.467 10.467 0 0 0-7.421 3.072l-.007.007zm.064.312c-.064.125-.064.288-.064.615v12.988c0 .327 0 .49.064.615.056.11.145.2.255.255.125.064.288.064.615.064h12.988c.327 0 .49 0 .615-.064a.584.584 0 0 0 .255-.255c.064-.125.064-.288.064-.615V6.006c0-.327 0-.49-.064-.615a.583.583 0 0 0-.255-.255c-.125-.064-.288-.064-.615-.064H6.006c-.327 0-.49 0-.615.064a.583.583 0 0 0-.255.255z"
+			/>
+		</svg>
+	</div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+	name: 'TheLogo'
+})
+</script>
+
+<style lang="stylus">
+.logo
+	top: 25px
+	left: 30%
+	display: flex
+	position: fixed
+	@media (max-width: 1024px)
+		left: initial
+		right: 25px
+</style>

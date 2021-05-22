@@ -1,0 +1,44 @@
+@import './reset'
+@import './fonts'
+
+:root
+	--s-color-black: #000000
+	--s-color-white: #FFFFFF
+	--s-color-white-05: #808080
+	--s-color-white-01: #191919
+
+	--s-body-font-size: 16px
+	--s-body-line-height: 1.5625
+
+html
+	font-family: 'Inter', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif
+	line-height: var(--s-body-line-height)
+	font-size: var(--s-body-font-size)
+	background: var(--s-color-black)
+	color: var(--s-color-white)
+
+	text-size-adjust: 100%
+
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+body
+	margin: 0
+
+html, body, #suprematist
+	@media (max-width: 1024px)
+		height: 100%
+		overflow: hidden
+
+svg
+	fill: currentColor
+
+a
+	color: var(--s-color-white)
+
+a:hover
+	color: var(--s-color-white-05)
+
+a:focus
+	outline: none
+	background-color: var(--s-color-white-01)
