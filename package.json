@@ -1,5 +1,5 @@
 {
-  "name": "suprematist.co",
+  "name": "@suprematist/suprematist.co",
   "private": true,
   "scripts": {
     "dev": "vite",
