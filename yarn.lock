@@ -264,7 +264,7 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@postanu/eslint-config@^3.0.0":
+"@postanu/eslint-config@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@postanu/eslint-config/-/eslint-config-3.1.1.tgz#5fcdc31307e3d462db896f285705a2ea1023b9e4"
   integrity sha512-KP5PUg8rbvFCUrTGtF8t2ZcnzY2JDl1j0siMFERzNNowB1+7/X99WiKs/KcH3xIdbSVBbED1dEkz2eerzfAaOw==
@@ -441,7 +441,7 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
-"@typescript-eslint/eslint-plugin@^4.23.0":
+"@typescript-eslint/eslint-plugin@^4.24.0":
   version "4.24.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.24.0.tgz#03801ffc25b2af9d08f3dc9bccfc0b7ce3780d0f"
   integrity sha512-qbCgkPM7DWTsYQGjx9RTuQGswi+bEt0isqDBeo+CKV0953zqI0Tp7CZ7Fi9ipgFA6mcQqF4NOVNwS/f2r6xShw==
@@ -467,7 +467,7 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@^4.23.0":
+"@typescript-eslint/parser@^4.24.0":
   version "4.24.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-4.24.0.tgz#2e5f1cc78ffefe43bfac7e5659309a92b09a51bd"
   integrity sha512-dj1ZIh/4QKeECLb2f/QjRwMmDArcwc2WorWPRlB8UNTZlY1KpTVsbX7e3ZZdphfRw29aTFUSNuGB8w9X5sS97w==
@@ -1406,7 +1406,7 @@ eslint-plugin-es@^3.0.0:
     eslint-utils "^2.0.0"
     regexpp "^3.0.0"
 
-eslint-plugin-import@^2.23.2:
+eslint-plugin-import@^2.23.3:
   version "2.23.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.23.3.tgz#8a1b073289fff03c4af0f04b6df956b7d463e191"
   integrity sha512-wDxdYbSB55F7T5CC7ucDjY641VvKmlRwT0Vxh7PkY1mI4rclVRFWYfsrjDgZvwYYDZ5ee0ZtfFKXowWjqvEoRQ==
@@ -1523,7 +1523,7 @@ eslint-visitor-keys@^2.0.0, eslint-visitor-keys@^2.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz#f65328259305927392c938ed44eb0a5c9b2bd303"
   integrity sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==
 
-eslint@^7.26.0:
+eslint@^7.27.0:
   version "7.27.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.27.0.tgz#665a1506d8f95655c9274d84bd78f7166b07e9c7"
   integrity sha512-JZuR6La2ZF0UD384lcbnd0Cgg6QJjiCwhMD6eU4h/VGPcVGwawNNzKU41tgokGXnfjOOyI6QIffthhJTPzzuRA==
@@ -4178,7 +4178,7 @@ vue-router@^4.0.8:
   dependencies:
     "@vue/devtools-api" "^6.0.0-beta.10"
 
-vue-tsc@^0.1.2:
+vue-tsc@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-0.1.4.tgz#c26a6e9f286c36bc870cff9b5e802262ac2c9c98"
   integrity sha512-BwExl/GTDS77wfOqYY29/8/fO4HMSwYeiRxeE5KcpCLqc1i4KUEVMjskB1Lzjvo1K1osux04p8D8c+ltqgta2Q==
