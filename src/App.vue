@@ -18,7 +18,7 @@ header.h
 				a.h__l(href="https://pinterest.com/suprematistco" target="_blank" rel="noopener") Pinterest
 			li
 				a.h__l(href="https://vk.com/suprematistco" target="_blank" rel="noopener") VK
-section#shop
+section#shop(ref="shop")
 	article.product
 		a.product__l(href="https://gumroad.com/l/Flxrk")
 			.product__t
@@ -37,13 +37,39 @@ section#shop
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+import { useIntersectionObserver } from '@vueuse/core'
 
 import TheLogo from './components/TheLogo.vue'
 
+declare function createGumroadOverlay (): void
+
 export default defineComponent({
 	name: 'App',
-	components: { TheLogo }
+	components: { TheLogo },
+	setup () {
+		let shop = ref(null)
+
+		let { stop } = useIntersectionObserver(
+			shop,
+			([{ isIntersecting }]) => {
+				if (isIntersecting) {
+					let script = document.createElement('script')
+					script.setAttribute('src', 'https://gumroad.com/js/gumroad.js')
+					document.querySelectorAll('head')[0].append(script)
+					script.addEventListener('load', (): void => {
+						setTimeout(() => {
+							createGumroadOverlay()
+							stop()
+						})
+					})
+				}
+			},
+			{ threshold: 0.7 }
+		)
+
+		return { shop }
+	}
 })
 </script>
 
