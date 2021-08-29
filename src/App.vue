@@ -1,11 +1,11 @@
 <template lang="pug">
 the-logo
 header.h
-	.h__t Suprematist
+	h1.h__t Suprematist
 	nav
 		ul.h__ul
 			li.--shop
-				a.h__l(href="https://suprematistco.gumroad.com" target="_blank" rel="noopener") Shop
+				a.h__l(href="#shop") Shop
 			li
 				a.h__l(href="https://instagram.com/suprematistco" target="_blank" rel="noopener") Instagram
 			li
@@ -18,6 +18,22 @@ header.h
 				a.h__l(href="https://pinterest.com/suprematistco" target="_blank" rel="noopener") Pinterest
 			li
 				a.h__l(href="https://vk.com/suprematistco" target="_blank" rel="noopener") VK
+section#shop
+	article.product
+		a.product__l(href="https://gumroad.com/l/Flxrk")
+			.product__t
+				h2 S001
+				p The first pack
+			.product__i
+				img(
+					src="./assets/S001-1.png"
+					alt="The first pack…"
+					loading="lazy"
+				)
+			.product__p
+				| $
+				data(value="7") 7
+			.product__b Buy
 </template>
 
 <script lang="ts">
@@ -33,13 +49,13 @@ export default defineComponent({
 
 <style lang="stylus">
 .h
+	height: var(--vh)
 	padding: 25px
 	display: flex
+	box-sizing: border-box
 	justify-content: space-between
 	@media (max-width: 1024px)
 		gap: 10px
-		height: 100%
-		box-sizing: border-box
 		flex-direction: column
 
 .h__t
@@ -65,4 +81,81 @@ export default defineComponent({
 	@media (max-width: 1024px)
 		display: inline-block
 		padding: 10px 0
+
+#shop
+	height: var(--vh)
+
+.product
+	width: calc(30% + 50px)
+	height: 100%
+	padding: 25px
+	position: relative
+	box-sizing: border-box
+	user-select: none
+	display: flex
+	@media (max-width: 1024px)
+		width: auto
+		height: var(--vh)
+
+.product:after
+	content: ""
+	position: absolute
+	top: 25px
+	right: 0
+	bottom: 25px
+	border-right: 1px solid var(--s-color-white-02)
+	@media (max-width: 1024px)
+		border: 0px
+
+.product__l
+	height: 100%
+	display: flex
+	position: relative
+	text-decoration: none
+	@media (max-width: 1024px)
+		width: 100%
+
+.product__l:hover
+	color: inherit
+
+	.product__i img
+		transform: scale(1.05)
+
+.product__t
+	position: absolute
+	top: 0
+	left: 0
+
+.product__t p
+	color: var(--s-color-white-05)
+
+.product__p
+	position: absolute
+	left: 0
+	bottom: 0
+	line-height: 50px
+
+.product__b
+	position: absolute
+	right: 0
+	bottom: 0
+	line-height: 50px
+	padding: 0 25px
+	border: 1px solid var(--s-color-white-02)
+	border-radius: 30px
+
+.product__i
+	width: 100%
+	height: 100%
+	padding: 75px 0
+	position: relative
+	display: flex
+	align-items: center
+	align-self: center
+	overflow: hidden
+	z-index: -1
+
+.product__i img
+	width: 100%
+	transition: transform 0.15s ease-in
 </style>
