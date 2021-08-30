@@ -20,7 +20,7 @@ header.h
 				a.h__l(href="https://vk.com/suprematistco" target="_blank" rel="noopener") VK
 section#shop(ref="shop")
 	article.product
-		a.product__l(href="https://gumroad.com/l/Flxrk")
+		a.product__l(href="https://gumroad.com/l/Flxrk" @click.prevent)
 			.product__t
 				h2 S001
 				p The first pack
