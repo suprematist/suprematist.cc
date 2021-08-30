@@ -26,9 +26,16 @@ section#shop(ref="shop")
 				p The first pack
 			.product__i
 				img(
-					src="./assets/S001-1.png"
-					alt="The first pack…"
-					loading="lazy"
+					srcset=`
+						./products/S001-1280w.jpg 1280w,
+						./products/S001-960w.jpg 960w,
+						./products/S001-480w.jpg 480w,
+						./products/S001-640w.jpg 640w,
+						./products/S001-240w.jpg 240w
+					`
+					sizes="(max-width: 1024px) 100vw, 30vw"
+					src="./products/S001-1280w.jpg"
+					alt="S001. The first pack."
 				)
 			.product__p
 				| $
@@ -37,8 +44,8 @@ section#shop(ref="shop")
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
 import { useIntersectionObserver } from '@vueuse/core'
+import { defineComponent, ref } from 'vue'
 
 import TheLogo from './components/TheLogo.vue'
 
@@ -134,6 +141,7 @@ export default defineComponent({
 		border: 0px
 
 .product__l
+	width: 100%
 	height: 100%
 	display: flex
 	position: relative
@@ -183,5 +191,6 @@ export default defineComponent({
 
 .product__i img
 	width: 100%
+	aspect-ratio: 1 / 1
 	transition: transform 0.15s ease-in
 </style>
