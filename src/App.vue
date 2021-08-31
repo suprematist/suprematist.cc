@@ -56,8 +56,11 @@ export default defineComponent({
 	components: { TheLogo },
 	setup () {
 		let shop = ref(null)
+		let gumroadInjected = false
 
 		function injectGumroad (): void {
+			if (gumroadInjected) return
+			gumroadInjected = true
 			let script = document.createElement('script')
 			script.setAttribute('src', 'https://gumroad.com/js/gumroad.js')
 			document.querySelectorAll('head')[0].append(script)
