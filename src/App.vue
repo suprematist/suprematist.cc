@@ -20,7 +20,7 @@ header.h
 				a.h__l(href="https://vk.com/suprematistco" target="_blank" rel="noopener") VK
 section#shop(ref="shop")
 	article.product
-		a.product__l(href="https://gumroad.com/l/Flxrk")
+		a.product__l(href="https://gumroad.com/l/Flxrk" @click.prevent="injectGumroad")
 			.product__t
 				h2 S001
 				p The first pack
@@ -57,31 +57,33 @@ export default defineComponent({
 	setup () {
 		let shop = ref(null)
 
+		function injectGumroad (): void {
+			let script = document.createElement('script')
+			script.setAttribute('src', 'https://gumroad.com/js/gumroad.js')
+			document.querySelectorAll('head')[0].append(script)
+			script.addEventListener('load', (): void => {
+				setTimeout(() => {
+					function creteGumroad (): void {
+						if (typeof createGumroadOverlay !== 'undefined') {
+							stop()
+						} else {
+							setTimeout(creteGumroad, 10)
+						}
+					}
+					creteGumroad()
+				})
+			})
+		}
+
 		let { stop } = useIntersectionObserver(
 			shop,
 			([{ isIntersecting }]) => {
-				if (isIntersecting) {
-					let script = document.createElement('script')
-					script.setAttribute('src', 'https://gumroad.com/js/gumroad.js')
-					document.querySelectorAll('head')[0].append(script)
-					script.addEventListener('load', (): void => {
-						setTimeout(() => {
-							function creteGumroad (): void {
-								if (typeof createGumroadOverlay !== 'undefined') {
-									stop()
-								} else {
-									setTimeout(creteGumroad, 10)
-								}
-							}
-							creteGumroad()
-						})
-					})
-				}
+				if (isIntersecting) injectGumroad()
 			},
 			{ threshold: 0.5 }
 		)
 
-		return { shop }
+		return { shop, injectGumroad }
 	}
 })
 </script>
