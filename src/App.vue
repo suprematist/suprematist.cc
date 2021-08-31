@@ -67,7 +67,6 @@ export default defineComponent({
 					script.addEventListener('load', (): void => {
 						setTimeout(() => {
 							function creteGumroad (): void {
-								console.log('creteGumroad')
 								if (typeof createGumroadOverlay !== 'undefined') {
 									stop()
 								} else {
