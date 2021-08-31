@@ -20,7 +20,7 @@ header.h
 				a.h__l(href="https://vk.com/suprematistco" target="_blank" rel="noopener") VK
 section#shop(ref="shop")
 	article.product
-		a.product__l(href="https://gumroad.com/l/Flxrk" @click.prevent)
+		a.product__l(href="https://gumroad.com/l/Flxrk")
 			.product__t
 				h2 S001
 				p The first pack
@@ -66,8 +66,15 @@ export default defineComponent({
 					document.querySelectorAll('head')[0].append(script)
 					script.addEventListener('load', (): void => {
 						setTimeout(() => {
-							createGumroadOverlay()
-							stop()
+							function creteGumroad (): void {
+								console.log('creteGumroad')
+								if (typeof createGumroadOverlay !== 'undefined') {
+									stop()
+								} else {
+									setTimeout(creteGumroad, 10)
+								}
+							}
+							creteGumroad()
 						})
 					})
 				}
