@@ -68,6 +68,7 @@ export default defineComponent({
 				setTimeout(() => {
 					function creteGumroad (): void {
 						if (typeof createGumroadOverlay !== 'undefined') {
+							createGumroadOverlay()
 							stop()
 						} else {
 							setTimeout(creteGumroad, 10)
