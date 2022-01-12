@@ -3,8 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "build": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
     "@vueuse/core": "^6.0.0",
