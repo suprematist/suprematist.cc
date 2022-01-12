@@ -5,6 +5,7 @@
   "license": "MIT",
   "homepage": "https://suprematist.co/",
   "repository": "suprematist/suprematist.co",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
