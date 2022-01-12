@@ -94,35 +94,39 @@ export default defineComponent({
 
 <style lang="stylus">
 .h
+	box-sizing: border-box
+	display: flex
+	justify-content: space-between
 	height: var(--vh)
 	padding: 25px
-	display: flex
-	box-sizing: border-box
-	justify-content: space-between
+
 	@media (max-width: 1024px)
-		gap: 10px
 		flex-direction: column
+		gap: 10px
 
 .h__t
 	text-transform: lowercase
 
 .h__ul
-	gap: 20px
 	display: flex
+	gap: 20px
 	list-style: none
+
 	@media (max-width: 1024px)
-		gap: 0
 		flex-direction: column
+		gap: 0
 
 .h__ul .--shop
 	@media (min-width: 1200px)
 		margin-right: 40px
+
 	@media (max-width: 1024px)
 		margin-bottom: 40px
 
 .h__l
 	padding: 10px
 	text-decoration: none
+
 	@media (max-width: 1024px)
 		display: inline-block
 		padding: 10px 0
@@ -131,33 +135,36 @@ export default defineComponent({
 	height: var(--vh)
 
 .product
+	position: relative
+	box-sizing: border-box
+	display: flex
 	width: calc(30% + 50px)
 	height: 100%
 	padding: 25px
-	position: relative
-	box-sizing: border-box
 	user-select: none
-	display: flex
+
 	@media (max-width: 1024px)
 		width: auto
 		height: var(--vh)
 
 .product:after
-	content: ""
 	position: absolute
 	top: 25px
 	right: 0
 	bottom: 25px
+	content: ""
 	border-right: 1px solid var(--s-color-white-02)
+
 	@media (max-width: 1024px)
 		border: 0px
 
 .product__l
+	position: relative
+	display: flex
 	width: 100%
 	height: 100%
-	display: flex
-	position: relative
 	text-decoration: none
+
 	@media (max-width: 1024px)
 		width: 100%
 
@@ -177,29 +184,29 @@ export default defineComponent({
 
 .product__p
 	position: absolute
-	left: 0
 	bottom: 0
+	left: 0
 	line-height: 50px
 
 .product__b
 	position: absolute
 	right: 0
 	bottom: 0
-	line-height: 50px
 	padding: 0 25px
+	line-height: 50px
 	border: 1px solid var(--s-color-white-02)
 	border-radius: 30px
 
 .product__i
-	width: 100%
-	height: 100%
-	padding: 75px 0
 	position: relative
+	z-index: -1
 	display: flex
 	align-items: center
 	align-self: center
+	width: 100%
+	height: 100%
+	padding: 75px 0
 	overflow: hidden
-	z-index: -1
 
 .product__i img
 	width: 100%

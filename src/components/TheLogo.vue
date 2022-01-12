@@ -24,11 +24,12 @@ export default defineComponent({
 
 <style lang="stylus">
 .logo
+	position: fixed
 	top: 25px
 	left: 30%
 	display: flex
-	position: fixed
+
 	@media (max-width: 1024px)
-		left: initial
 		right: 25px
+		left: initial
 </style>
