@@ -1,10 +1,10 @@
 {
-  "name": "@suprematist/suprematist.co",
+  "name": "@suprematist/suprematist.cc",
   "private": true,
   "author": "Eduard Aksamitov <e@edaks.co>",
   "license": "MIT",
-  "homepage": "https://suprematist.co/",
-  "repository": "suprematist/suprematist.co",
+  "homepage": "https://suprematist.cc/",
+  "repository": "suprematist/suprematist.cc",
   "type": "module",
   "scripts": {
     "dev": "vite",
