@@ -17,8 +17,7 @@ header.h
 			li
 				a.h__l(href="https://pinterest.com/suprematistcc" target="_blank" rel="noopener") Pinterest
 			li
-				a.h__l(href="https://vk.com/suprematistcc" target="_blank" rel="noopener") VK
-
+				a.h__l(href="https://discord.gg/6vfpmpbhNt" target="_blank" rel="noopener") Discord
 </template>
 
 <script lang="ts" setup>
