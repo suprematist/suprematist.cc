@@ -16,8 +16,6 @@ header.h
 				a.h__l(href="https://t.me/suprematistcc" target="_blank" rel="noopener") Telegram
 			li
 				a.h__l(href="https://pinterest.com/suprematistcc" target="_blank" rel="noopener") Pinterest
-			li
-				a.h__l(href="https://discord.gg/6vfpmpbhNt" target="_blank" rel="noopener") Discord
 </template>
 
 <script lang="ts" setup>
