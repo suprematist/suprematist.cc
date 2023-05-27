@@ -5,22 +5,42 @@ header.h
 	nav
 		ul.h__ul
 			li
-				a.h__l(href="https://instagram.com/suprematistcc" target="_blank" rel="noopener") Instagram
+				a.h__l(
+					href="https://instagram.com/suprematistcc"
+					target="_blank"
+					rel="noopener"
+				) Instagram
 			li
-				a.h__l(href="https://facebook.com/suprematistcc" target="_blank" rel="noopener") Facebook
+				a.h__l(
+					href="https://facebook.com/suprematistcc"
+					target="_blank"
+					rel="noopener"
+				) Facebook
 			li
-				a.h__l(href="https://twitter.com/suprematistcc" target="_blank" rel="noopener") Twitter
+				a.h__l(
+					href="https://twitter.com/suprematistcc"
+					target="_blank"
+					rel="noopener"
+				) Twitter
 			li
-				a.h__l(href="https://t.me/suprematistcc" target="_blank" rel="noopener") Telegram
+				a.h__l(
+					href="https://t.me/suprematistcc"
+					target="_blank"
+					rel="noopener"
+				) Telegram
 			li
-				a.h__l(href="https://pinterest.com/suprematistcc" target="_blank" rel="noopener") Pinterest
+				a.h__l(
+					href="https://pinterest.com/suprematistcc"
+					target="_blank"
+					rel="noopener"
+				) Pinterest
 </template>
 
 <script lang="ts" setup>
 import TheLogo from './components/TheLogo.vue'
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 .h
 	box-sizing: border-box
 	display: flex

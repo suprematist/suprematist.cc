@@ -14,7 +14,7 @@
 	</div>
 </template>
 
-<style lang="stylus">
+<style lang="sass">
 .logo
 	position: fixed
 	top: 25px
