@@ -4,8 +4,6 @@ header.h
 	h1.h__t Suprematist
 	nav
 		ul.h__ul
-			li.--donate
-				a.h__l(href="https://boosty.to/suprematist" target="_blank" rel="noopener") Donate
 			li
 				a.h__l(href="https://instagram.com/suprematistcc" target="_blank" rel="noopener") Instagram
 			li
@@ -46,12 +44,12 @@ import TheLogo from './components/TheLogo.vue'
 		flex-direction: column
 		gap: 0
 
-	li.--donate
-		@media (min-width: 1200px)
-			margin-right: 40px
+	// li.--donate
+	// 	@media (min-width: 1200px)
+	// 		margin-right: 40px
 
-		@media (max-width: 1024px)
-			margin-bottom: 40px
+	// 	@media (max-width: 1024px)
+	// 		margin-bottom: 40px
 
 .h__l
 	padding: 10px
