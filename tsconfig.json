@@ -23,5 +23,10 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue"
-  ]
+  ],
+  "vueCompilerOptions": {
+    "plugins": [
+      "@volar/vue-language-plugin-pug"
+    ]
+  }
 }
